@@ -1,10 +1,11 @@
-RECURRING-PATTERNS CHECKLIST — v1, added 7 September 2026
+RECURRING-PATTERNS CHECKLIST — v2, amended 13 September 2026
 
 A checklist for reviewers to check new drafts/findings against, in
 addition to their own independent read. Maintained here so brief
-revisions don't need to carry this content inline. Ten patterns
-total: nine originally summarized in brief v17, plus one new
-addition (item 8) from Block 34 v1's own history.
+revisions don't need to carry this content inline. Twelve patterns:
+nine originally summarized in brief v17, one addition (item 8) from
+Block 34 v1's own history, and two added on 13 September 2026 from
+blocks that modified a tracked file rather than adding one.
 
 1. Doctrine-pointer misattribution — a targeted-read instruction
    attaching a list to the wrong document.
@@ -23,5 +24,19 @@ addition (item 8) from Block 34 v1's own history.
    real but stale or aimed at the wrong thing.
 10. A changelog that describes a fix the body text does not
     actually contain.
+11. A guard copied from an add-only block into a modifying one —
+    `test ! -e <path>` is an absence test, and on a file the block
+    requires to be present it returns exit 1, the chain
+    short-circuits, the confirmation never prints, and the block's
+    own rule then says stop. It cannot complete regardless of
+    anything else.
+12. A modifying block holding one digest where it needs two. The
+    same file has a before value and an after value; a blanket
+    substitution puts the after value in the before slot, and the
+    block stops at its first check on a correct repository. Pin
+    both, say which is which, and pin the insertion and deletion
+    counts from `git diff --numstat` — one block stated a correct
+    total with a wrong split, which stops an executor matching it
+    exactly.
 
-=== END OF RECURRING-PATTERNS CHECKLIST v1 ===
+=== END OF RECURRING-PATTERNS CHECKLIST v2 ===
