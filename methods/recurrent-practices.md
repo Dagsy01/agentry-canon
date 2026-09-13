@@ -1,6 +1,6 @@
 RECURRENT PRACTICES
 
-Version prepared: 11 September 2026, 02:44 BST
+Version prepared: 13 September 2026, 21:21 BST
 Status: IN FORCE from 11 September 2026, ratified by the operator in the
     commit that publishes it.
 
@@ -478,5 +478,17 @@ where a report gave one — section 14's "three of the five", section 4's
 here: reproduced, not verified. An earlier version claimed no figures
 appeared at all, which four reviewers found false.
 
-**Nothing about how to work with a particular model or tool.** Those
-change faster than a convention should.
+**Nothing about how to work with a particular model or tool — it is
+recorded elsewhere.** An earlier version excluded it outright, on the
+grounds that it changes faster than a convention should. That reasoning
+was right and its consequence was not: the knowledge then lived only in
+individual conversations, and on 11 September 2026 two windows were
+found holding different assessments of the same reviewer with nowhere to
+check either.
+
+**It now lives in `registers/reviewer-behaviour.md`**, which holds
+capability facts — what each reviewer can and cannot do, stated as
+testable properties without comparison. **Performance rankings are not
+there and are not public**: which reviewer outperformed which is
+benchmarking, and some providers' terms restrict published comparison of
+their service.
