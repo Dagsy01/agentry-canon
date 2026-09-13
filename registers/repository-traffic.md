@@ -109,10 +109,43 @@ cannot tell those apart.
 4. READINGS
 ================================================================
 
-**None yet.** This register is created empty, and the first reading
-should be taken now rather than at the next cadence point — the 14-day
-window means whatever is currently visible is already the oldest data
-that will ever be recoverable.
+    REPOSITORY   Dagsy01/agentry-canon
+    READ ON      12 September 2026, 23:40 BST
+    PERIOD       last 14 days, as the page states it — the charts span
+                 29 August to 12 September 2026
+    VIEWS        26
+    VISITORS     1
+    CLONES       73
+    CLONERS      39
+    REFERRERS    github.com — 5 views, 1 unique visitor
+                 (the only entry listed; nothing withheld)
+    CONTENT      /branches — 7 views, 1 unique
+                 Overview — 5 views, 1 unique
+                 /tree/main — 5 views, 1 unique
+                 /tree/main/conventions — 5 views, 1 unique
+                 /blob/main/conventions/review-le… — 3 views, 1 unique
+                 /blob/main/conventions/reviewer-… — 1 view, 1 unique
+    NOTES        First reading. The repository's first commit was
+                 7 September 2026 and all charts read zero until
+                 6 September, so this period covers essentially the
+                 whole of its existence.
+
+                 One unique visitor against 26 views. Own views are
+                 excluded while signed in, so that visitor is not the
+                 operator. Every content row shows 1 unique visitor,
+                 consistent with a single party browsing several pages
+                 rather than several parties arriving.
+
+                 39 unique cloners against 1 unique visitor is the
+                 striking figure and it is almost certainly not 39
+                 people. Clones include automation, this project runs
+                 agent sessions that clone the repository, and the
+                 clone series begins on 6 September — when that work
+                 began. Treat the clone figures as this project's own
+                 tooling unless something distinguishes them.
+
+                 Referrer github.com with 5 views is internal GitHub
+                 navigation, not an external link.
 
 ================================================================
 5. WHAT THIS DOES NOT MEASURE
