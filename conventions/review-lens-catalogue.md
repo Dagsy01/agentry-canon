@@ -1,6 +1,6 @@
 REVIEW LENS CATALOGUE — FOR SPECIFICATION AND GOVERNANCE DOCUMENTS
 
-Version prepared: 10 September 2026, 09:54 BST
+Version prepared: 14 September 2026, 17:38 BST
 First issued: 9 September 2026, 16:59 BST, as v01.
 For: the conventions repository, as a standing catalogue to select from
 From: the Claude Chat audit window, after eight versions and one external
@@ -210,7 +210,29 @@ letters and nothing else — the named thing became the whole scope. So:
 6. SELECTION RULE
 ================================================================
 
-Do not run all forty-one. Choose by what the document is and what has changed.
+**This list is a FLOOR, not an allocation.** It says which lenses must be
+applied; it does not say which may not be. A reviewer told to apply A1, A2 and
+A3 is being told those three are required, not that the other thirty-eight are
+excluded — and reading it the second way is the trap section 2 describes, a
+named lens becoming the whole scope, operating on the selection rule itself.
+
+**Which lenses yield most is UNMEASURED.** The figures sometimes cited for
+diminishing returns are one observation from one document by one author, and
+they do not support narrowing. **Until that changes, err towards more lenses
+rather than fewer**, and record what each returned.
+
+**In a round robin, divide the catalogue across the panel rather than selecting
+from it.** One group each across five reviewers covers eight groups at no extra
+cost to any of them, and it covers more than any selection would. Selecting was
+the right instinct when one reviewer worked alone; it is the wrong one when the
+work is divided.
+
+**Every round should record which lenses were applied and which returned
+nothing.** That is what turns "which lenses are worth running" from a matter of
+taste into a measurable question. It costs one line per round and it is the only
+route to a selection rule that rests on evidence.
+
+Choose by what the document is and what has changed.
 
   1. **Always, on any version after the first:** A1, A2, A3. Contradiction,
      residue and sibling-site completeness are where revision defects live, and
@@ -228,10 +250,13 @@ Do not run all forty-one. Choose by what the document is and what has changed.
      between building a thing and releasing it, and an answer established at
      the start may not hold at the end.
 
-Diminishing returns are real, but the figures behind that claim are one
+Diminishing returns may be real, but the figures behind that claim are one
 observation from one document by one author and are NOT a result. They are
 recorded in the separate audit artefact, not here, and must not be cited from a
-convention as though the convention established them.
+convention as though the convention established them — **and in particular they
+do not establish that running fewer lenses is better.** An earlier version of
+this section opened with "Do not run all forty-one", which prescribed from a
+figure the same section disclaims.
 
 ================================================================
 7. CLASSIFICATION, FORM, AND STATUS
