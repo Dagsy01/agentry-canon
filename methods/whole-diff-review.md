@@ -1,6 +1,6 @@
 RUNNING A WHOLE-DIFF REVIEW
 
-Version prepared: 12 September 2026, 22:42 BST
+Version prepared: 15 September 2026, 00:21 BST
 Status: IN FORCE from 12 September 2026, ratified by the operator in
     the commit that publishes it.
 
@@ -67,6 +67,17 @@ project, may hold context from an earlier round and answer against
 that instead of what it is actually sent this time. State explicitly,
 in the commission itself, what supersedes anything the reviewer might
 already be holding.
+
+**Provider composition, stated in the commission.** Independence in
+this project is defined by provider, not by freshness of context — so a
+round including two participants from the same provider has two
+same-family reviewers in it, however separately they were run.
+**Agreement between them is quality control, not a second independent
+signal**, and a reader assembling the findings afterwards cannot tell
+the difference unless the commission says so. State which participants
+share a provider, plainly, in the commission itself. It costs one line
+and it stops the strongest-looking convergence in a round from being the
+weakest.
 
 **A known standard to judge against**, stated in the commission, not
 left for each reviewer to infer. What counts as a finding, what is
@@ -230,14 +241,34 @@ central claim was found unsupported still carried a stale internal
 cross-reference to content that no longer existed after the rewrite**,
 pointing a reader at "the rationale below" when the section it meant
 had been replaced. Neither the author nor the first round of review
-caught this; a second, independent pass did. Superseding text in place
-does not, by itself, catch every pointer into the superseded material —
+caught this; a second pass by a different provider did. Superseding
+text in place does not, by itself, catch every pointer into the
+superseded material —
 each needs checking separately. This is a specific case of a broader,
 already-published rule: successive incremental review can omit a
 defect introduced once and never touched again, because it is never the
 line that changed (`methods/recurrent-practices.md`, section 10). The
 stale cross-reference is what that rule looks like when the defect is
 a pointer rather than a line of logic.
+
+**And finding one instance is a reason to search for siblings, not a
+reason to stop.** The same failure recurred in a commission assembled
+against this method: a closing line claimed nothing remained open while
+an entry in the same section logged one finding as open. Asked
+specifically to check for it, the author found two more of the identical
+pattern in the same document — an opening summary making the same
+overstated claim, and an out-of-scope line that would have told
+reviewers not to raise the one thing their input was wanted on.
+
+**Two searches, not one.** Search the old phrasing, which is what lens
+A3 prescribes — then **name the class the fix belongs to and search for
+that**. The first search finds every site carrying the same words and
+succeeds; the second finds the sites carrying the same mistake in
+different words. A later round found an author and a same-family
+reviewer stopping at exactly that boundary on the same document, each
+having run the first search correctly — same-family, and named as such
+here because section 2 requires it. **The boundary is in the
+instruction, not in the reader.**
 
 **A ratified rule, applied and committed the same day it was ratified,
 was found by three separately-run reviewers — working independently,
@@ -311,8 +342,8 @@ produces confident, useless answers.
 7. WHAT IS STILL UNSETTLED
 ================================================================
 
-**What happens when two reviewers, both independent and both careful,
-reach opposite severity judgements on the same finding.** This project
+**What happens when two careful reviewers reach opposite severity
+judgements on the same finding.** This project
 has hit this directly — one reviewer treating a demonstrated gap as
 blocking, another treating a structurally similar gap as an accepted,
 disclosed limitation consistent with the artefact's existing design
