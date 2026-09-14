@@ -1,16 +1,27 @@
 REVIEW LENS CATALOGUE — FOR SPECIFICATION AND GOVERNANCE DOCUMENTS
 
-Version prepared: 14 September 2026, 17:38 BST
+Version prepared: 14 September 2026, 22:36 BST
 First issued: 9 September 2026, 16:59 BST, as v01.
 For: the conventions repository, as a standing catalogue to select from
 From: the Claude Chat audit window, after eight versions and one external
     round-robin on a product specification
-Version: v07
+Version: v08
 Status: IN FORCE. Ratified by the operator, 9 September 2026, and
     committed to conventions/ on that basis.
 
 REVISION HISTORY. One paragraph per version, newest first, so no line is
 edited in place.
+
+v08 — adds three forward-looking lenses to group F: F0a forward impact, F0b
+fix-induced failure modes, F0c what acceptance commits you to. Queued as this
+catalogue's first amendment on 10 September and written now. Removes residue in
+section 0 that still called running every lens theatre, which the selection rule
+withdrew earlier the same day, and corrects the adjacent item so that few lenses
+per reviewer reads as a limit on what one reviewer is asked rather than on what
+a round covers. Names the groups in section 6 rather than counting them, and
+stops stating a total lens count anywhere: a count of the document's own
+contents goes stale at the next amendment, which is how adding three lenses made
+three separate sites false at once.
 
 v07 — removes the `Repository: none. Pull request: none.` line, which is
 review-artefact apparatus that contradicted the committed status and has no
@@ -50,7 +61,7 @@ Classification confirmed as ATX-001 instrxqz by ruling of 9 September 2026,
 0. WHAT THIS IS, AND THE TRAP IT CARRIES
 ================================================================
 
-Forty-one lenses that can be applied to a document which specifies something
+Lenses that can be applied to a document which specifies something
 someone else will build. It is a menu to select from, never a checklist to
 complete.
 
@@ -62,10 +73,14 @@ letters and nothing else — the named thing became the whole scope. So:
   1. **A lens is an addition to a full cold read, never a substitute for one.**
      Every commission must say so, and must ask for cold-read findings first,
      under their own heading, before the lens pass.
-  2. **Assign few lenses per reviewer.** One is usually right; two is a
-     maximum. A reviewer given six will do six shallowly.
-  3. **Running all forty-one is not thoroughness, it is theatre.** Section 6
-     gives a selection rule.
+  2. **Assign few lenses per reviewer, and divide the rest across the
+     panel.** One or two each is usually right — a reviewer given six
+     will do six shallowly. **That is a limit on what one reviewer is
+     asked, not on what the round covers.**
+  3. **How many lenses a round should apply is UNMEASURED.** An earlier
+     version of this item said running all of them was theatre; that
+     rested on one observation from one document and has been withdrawn.
+     Section 6 gives a floor and says why it is not a ceiling.
 
 ================================================================
 1. GROUP A — THE DOCUMENT AGAINST ITSELF
@@ -164,6 +179,19 @@ letters and nothing else — the named thing became the whole scope. So:
 
 **F — Lifecycle.**
 
+  F0a **Forward impact.** What does this change do to things that already
+      work? Not whether it is correct, but what else moves when it lands.
+      Asked before the change is made, not after it is reviewed.
+  F0b **Fix-induced failure modes.** A fix is a new change and carries the
+      same risk as any other. What can this remedy break that was not
+      broken before? A fix for a safety defect is itself safety-relevant
+      and gets the same scrutiny as the defect did.
+  F0c **What acceptance commits you to.** Adopting this creates an
+      obligation — to maintain it, to keep it consistent with something
+      else, to carry it into every future instance of the same shape. Say
+      what that obligation is before accepting, not when it is first
+      missed.
+
   F1  **Failure and degradation.** Every error path, partial data, and what the
       user sees.
   F2  **Migration and upgrade.** What happens to existing users' data on
@@ -212,7 +240,7 @@ letters and nothing else — the named thing became the whole scope. So:
 
 **This list is a FLOOR, not an allocation.** It says which lenses must be
 applied; it does not say which may not be. A reviewer told to apply A1, A2 and
-A3 is being told those three are required, not that the other thirty-eight are
+A3 is being told those three are required, not that the rest are
 excluded — and reading it the second way is the trap section 2 describes, a
 named lens becoming the whole scope, operating on the selection rule itself.
 
@@ -222,8 +250,13 @@ they do not support narrowing. **Until that changes, err towards more lenses
 rather than fewer**, and record what each returned.
 
 **In a round robin, divide the catalogue across the panel rather than selecting
-from it.** One group each across five reviewers covers eight groups at no extra
-cost to any of them, and it covers more than any selection would. Selecting was
+from it.** Across a panel, a group each covers far more than any one reviewer's selection
+would, at no extra cost to any of them — **and eight groups need eight
+assignments, so a panel of five takes two groups each for three of them rather
+than leaving three groups unread.** The groups are **A** contradiction and
+residue, **B** the implementer's reading, **C** compliance, **D** acceptance
+criteria, **E** external constraints, **F** lifecycle, **G** scope and product,
+**H** process. Selecting was
 the right instinct when one reviewer worked alone; it is the wrong one when the
 work is divided.
 
@@ -265,7 +298,7 @@ figure the same section disclaims.
 **7.1 Classification: ATX-001 `instrxqz`, ruled 9 September 2026, 17:02 BST.**
 The subject matter is a catalogue and a catalogue is reference, but the
 principal communicative act is prescriptive: section 0's three rules and
-section 6's selection rule bind every future commission. The forty-one entries
+section 6's selection rule bind every future commission. The catalogue's entries
 are the vocabulary those rules operate over, not the act. ATX-001's own test
 settles it — a reviewer briefed next month must comply with "a lens is an
 addition to a cold read" whether or not they have seen this campaign.
