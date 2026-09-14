@@ -1,11 +1,11 @@
 RECURRENT PRACTICES
 
-Version prepared: 13 September 2026, 21:21 BST
+Version prepared: 15 September 2026, 00:31 BST
 Status: IN FORCE from 11 September 2026, ratified by the operator in the
     commit that publishes it.
 
-Fourteen working practices that recur across separate windows' records,
-and one added afterwards from a single window and marked as such.
+Working practices that recur across separate windows' records, and
+those added afterwards from single windows and marked as such.
 Each is stated with the rule, how many reports carry it, what
 independence evidence exists for it, and the incidents behind it.
 
@@ -65,9 +65,9 @@ differ, and whether provider information was recorded. Where it says
 "not stated", that is the honest answer and not an omission.
 
 **On the inclusion threshold.** Entries appear here if two or more
-reports carry them, with one marked exception at section 15, admitted
-at the operator's instruction; the five with exactly two are marked as
-such. The earlier criterion admitted
+reports carry them, with marked exceptions at sections 15 and 17,
+admitted at the operator's instruction; those with exactly two are
+marked as such. The earlier criterion admitted
 two-report entries only where the two "reached them by visibly
 different routes" — which was false of all four such entries, each of
 which describes two windows making the same error and applying the same
@@ -448,22 +448,94 @@ doing recoverable work while irrecoverable work waits should say so
 rather than finish the task in hand first.
 
 ================================================================
-16. WHAT IS NOT HERE
+16. EXECUTION FINDS WHAT READING CANNOT, ON THE SAME ARTEFACT
+================================================================
+
+*Independence evidence: two reports — a PLM campaign window and this
+window, 14 September 2026, both Anthropic. Same-family, so this is
+quality control rather than independent corroboration, and it is stated
+here because a reader cannot tell otherwise.*
+
+**A reviewer that can run the artefact finds defects a reviewer reading
+it cannot, and the gap is not a matter of care.** It is structural: some
+properties of a system are only visible when it runs.
+
+The incident is a review round on 14 September 2026. Four reviewers
+examined the same block. Two with execution access separately found
+the same fail-open — if both state files are unreadable, a comparison of
+their contents succeeds on two empty strings and reports verification
+without verifying anything. They found it by different routes: one by
+removing the state files, the other by refusing the write with
+`noclobber`. **A careful reviewer working from the text alone missed it
+entirely**, and its other findings that round were accurate.
+
+**This is not section 11 restated, and the difference is the point.**
+Section 11 is about evidence the reviewer *holds* — a base branch, a
+missing command, a parser flag, facts absent from the text, and it says
+those could have been established by reading if someone had supplied the
+environment's state. **Here the defect was in the code, fully visible,
+and nobody lacked anything.** Both files, the comparison, the empty
+strings: all of it was on the page. It was missed by tracing rather than
+by evidence, and running it is what surfaced it.
+
+**So compose a panel for what its members can do, not only for what they
+know.** A claim about a general principle goes to a reviewer with a
+sandbox; a claim about a repository's actual state goes to one holding
+the repository; a claim about what a document says goes to any of them.
+Sending a reviewer the wrong kind of question gets a correct answer to
+the wrong question.
+
+**And record which findings were executed.** A finding demonstrated by
+running something outranks the same finding asserted from reading,
+because the demonstration can be re-run and the assertion cannot. That
+is a statement about evidence, not about reviewers — it survives the
+roster changing.
+
+================================================================
+17. A SUMMARY WRITTEN BY THE AUTHOR IS THE UNREVIEWED PART
+================================================================
+
+*Independence evidence: one report — this window and its execution
+agent, 15 September 2026, same-family. Below this document's inclusion
+threshold and included anyway, marked. Discount it accordingly.*
+
+**When an author sends a change for review, the change is reviewed and
+the author's description of it is not.** The document arrives as
+material; the summary arrives as context, and a reviewer reads it to
+orient rather than to check.
+
+The incident is two consecutive rounds, late on 14 September and just
+after midnight on 15 September 2026. A summary
+claimed no remaining use of a term described a reviewer; one did. The
+next claimed two paragraphs had been reflowed; both had been rewrapped
+one line deep. **Neither error was in the change. Both were in the
+sentence describing it**, and both were a single command away from being
+caught — an occurrence count and a line-length pass, using instruments
+already present in the same block.
+
+**The countermeasure is to name the summary as a review target.** A
+commission that lists what a reviewer must examine should list the
+author's own account of the change alongside the change itself.
+Otherwise it is the one part of the artefact that reaches a reviewer
+already believed.
+
+================================================================
+18. WHAT IS NOT HERE
 ================================================================
 
 **Practices reported by only one window.** Roughly a hundred and sixty
 entries appear once, many of them specific and hard-won, and several
 will turn out to be general once another workstream meets the same
-problem. They are held in the full corpus, except the one admitted at
-section 15 and marked there. One reviewer notes the cost:
+problem. They are held in the full corpus, except those admitted at
+sections 15 and 17 and marked there. One reviewer notes the cost:
 a threshold that prioritises recurrence over coverage will exclude
 single-report practices describing rare but severe failures.
 
 **A rule for resolving conflicting findings between reviewers.** One
 reviewer identified this as the gap the collection implies and does not
-fill: these fifteen entries assume several reviewers producing
+fill: these entries assume several reviewers producing
 substantial findings, and nothing here says what happens when two
-independent reviewers contradict each other or propose mutually
+reviewers contradict each other or propose mutually
 exclusive remedies. No report supplies one.
 
 **Numbers, and what the ones here are.** The counts of reports are
