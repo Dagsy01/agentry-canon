@@ -1,11 +1,12 @@
-RECURRING-PATTERNS CHECKLIST — v2, amended 13 September 2026
+RECURRING-PATTERNS CHECKLIST — v3, amended 14 September 2026
 
 A checklist for reviewers to check new drafts/findings against, in
 addition to their own independent read. Maintained here so brief
-revisions don't need to carry this content inline. Twelve patterns:
+revisions don't need to carry this content inline. Fifteen patterns:
 nine originally summarized in brief v17, one addition (item 8) from
-Block 34 v1's own history, and two added on 13 September 2026 from
-blocks that modified a tracked file rather than adding one.
+Block 34 v1's own history, two added on 13 September 2026 from blocks
+that modified a tracked file rather than adding one, and three added on
+14 September 2026 from a seven-round execution-block campaign.
 
 1. Doctrine-pointer misattribution — a targeted-read instruction
    attaching a list to the wrong document.
@@ -38,5 +39,22 @@ blocks that modified a tracked file rather than adding one.
     counts from `git diff --numstat` — one block stated a correct
     total with a wrong split, which stops an executor matching it
     exactly.
+13. A fence that assumes state survives between calls. No shell
+    variable, working directory, PATH entry or environment value
+    persists from one tool invocation to the next. A block that
+    splits a check across two fences has already lost whatever the
+    first one established. Write every cross-call value to a file in
+    a named state directory, or keep the whole check in one fence.
+14. A guard written as prose rather than as code. A sentence
+    containing "confirm", "must match", "check that" or "STOP if"
+    has no exit status, is followed inconsistently by careful
+    executors, and cannot fail. Every guard is a command whose exit
+    code decides, or it is not a guard.
+15. Source quoted from memory rather than read. A block citing a
+    file, a function signature, a line of configuration or a prior
+    version must quote what is there now, fetched or read in this
+    pass. Paraphrase from recollection is how a claim that was true
+    once survives into a version where it is false — most often for
+    something already got wrong once and corrected.
 
-=== END OF RECURRING-PATTERNS CHECKLIST v2 ===
+=== END OF RECURRING-PATTERNS CHECKLIST v3 ===
