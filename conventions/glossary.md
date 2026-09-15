@@ -155,8 +155,16 @@ Distinct from a finding's consequence — see section 6.
 ================================================================
 
 **Cold read.** Reading an artefact as someone meeting it for the first
-time, with the drafting history deliberately withheld so the reader
-discovers where to look rather than being told.
+time, **with the drafting history deliberately withheld** so the reader
+discovers where to look rather than being told. **Withholding is what
+makes it cold**, and a round that states what earlier rounds found is
+not one, however fresh the reader.
+
+**Whole-artefact read.** Reading the artefact entire, before any lens
+narrows attention to one question. **Not the same act as a cold read**
+and commonly confused with it: a reviewer given the prior findings can
+still read the whole thing, and that is what most commissions ask for.
+Where a commission means one, it should say which.
 
 **Lens.** A named question applied to an artefact as a second pass after
 a full cold read. An addition, never a substitute — a brief that names a
@@ -185,7 +193,16 @@ publication or acceptance.
 
 **Independent review.** A reviewer from a different provider, and nothing
 else. A fresh session or a new context of the same model is same-family
-review. The looser usage is retired: one window watched a same-family
+review. **The reserved term is the noun phrase — an "independent
+review", an "independent reviewer" — and it means provider difference.
+The ordinary adverb is not reserved**: "found independently",
+"independently verifiable", "independent convergence" carry their
+everyday sense of separate derivation or absent coordination, and are
+fine where the sentence makes that unmistakable. An earlier version
+retired the looser usage outright, which is a rule this project cannot
+follow and which generated a finding every round.
+
+The reserved sense earned itself: one window watched a same-family
 chain converge inside what it called its own echo chamber until a
 cross-provider reviewer found two things it had missed. **That the
 earlier chain could not have found them is not established and was
