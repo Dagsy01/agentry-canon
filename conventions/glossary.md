@@ -1,6 +1,6 @@
 GLOSSARY
 
-Version prepared: 10 September 2026, 14:13 BST
+Version prepared: 15 September 2026, 01:43 BST
 Status: IN FORCE from 10 September 2026.
 
 Terms used across this project's documents. Drawn from fourteen
@@ -25,8 +25,17 @@ committed artefacts rather than in any conversation.
 **Workstream.** One repository or project under one orchestrating window.
 
 **Execution agent.** A model with a shell, a filesystem and repository
-access, which acts on blocks. It can test an environment claim by
-running it, which no reviewer can.
+access, which acts on blocks. **It is the only participant that can
+settle a question about the repository's actual state**, because it
+holds the repository.
+
+**Execution and repository access are different capabilities and must
+not be conflated.** Some reviewers can execute — a sandbox in which a
+demonstration can be run and its real output reported — without holding
+any repository. A claim about a general principle can go to such a
+reviewer; a claim about this repository's files, history or
+configuration cannot. Which reviewers can do which is recorded in
+`registers/reviewer-behaviour.md` and changes.
 
 **Reviewer.** A model or person that reads and reports. Has no write
 access to the repository and changes nothing.
@@ -54,8 +63,11 @@ the wrong person. Never sent alone; it travels inside a covering
 commission that publishes its digest.
 
 A review artefact that is later archived in a repository does not become
-a repository document. The distinction is the communicative role, not the
-storage location.
+a repository document. **The test is the communicative role, not the
+storage location, and it governs wherever the two disagree.** An
+archived report keeps the header it was issued with; a maintained
+convention carries none even when it travels as an attachment, because
+what it is has not changed by being sent.
 
 **Block.** An instruction file addressed to an execution agent. Anything
 addressed to a reader is a commission. The distinction is load-bearing
@@ -175,11 +187,14 @@ publication or acceptance.
 else. A fresh session or a new context of the same model is same-family
 review. The looser usage is retired: one window watched a same-family
 chain converge inside what it called its own echo chamber until a
-cross-provider reviewer found two things that chain structurally could
-not. **This sense of "independent" is about providers and applies only to
-reviewers.** Oracle independence and guard independence, in section 5,
-are about derivation and dependency and have nothing to do with
-providers.
+cross-provider reviewer found two things it had missed. **That the
+earlier chain could not have found them is not established and was
+withdrawn as a claim** — see `methods/recurrent-practices.md` section 9.
+The rule rests on the risk of correlated blind spots, not on a
+demonstrated incapacity. **This sense of "independent" is about
+providers and applies only to reviewers.** Oracle independence and guard
+independence, in section 5, are about derivation and dependency and have
+nothing to do with providers.
 
 **Triage.** Judging a finding rather than implementing it. Adopting a
 reviewer's prescription wholesale is the same failure as ignoring it.
@@ -219,6 +234,12 @@ question.
 **Unable to verify.** The check could not be performed. State what was
 missing — access, a tool, a source. Distinct from undetermined: one is a
 conclusion about the evidence, the other about the reviewer's reach.
+
+**It is the correct answer whenever either capability or access is
+absent for that particular check**, and a reviewer reporting it honestly
+has complied rather than failed. A reviewer with a working hash tool but
+no access to the bytes in question is unable to verify, and saying so is
+right.
 
 **Provenance tag.** A per-claim label saying whether something was
 fetched or executed this session, is general knowledge not verified now,

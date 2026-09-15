@@ -1,16 +1,21 @@
 REVIEW LENS CATALOGUE — FOR SPECIFICATION AND GOVERNANCE DOCUMENTS
 
-Version prepared: 14 September 2026, 22:36 BST
+Version prepared: 15 September 2026, 01:43 BST
 First issued: 9 September 2026, 16:59 BST, as v01.
 For: the conventions repository, as a standing catalogue to select from
 From: the Claude Chat audit window, after eight versions and one external
     round-robin on a product specification
-Version: v08
+Version: v09
 Status: IN FORCE. Ratified by the operator, 9 September 2026, and
     committed to conventions/ on that basis.
 
 REVISION HISTORY. One paragraph per version, newest first, so no line is
 edited in place.
+
+v09 — reconciles section 0 item 2 with section 6: the unit of
+assignment is a group, not one or two lenses, which is what section 6
+already required and item 2 contradicted. Corrects section 6's pointer
+for the named-lens trap from section 2 to section 0.
 
 v08 — adds three forward-looking lenses to group F: F0a forward impact, F0b
 fix-induced failure modes, F0c what acceptance commits you to. Queued as this
@@ -73,10 +78,17 @@ letters and nothing else — the named thing became the whole scope. So:
   1. **A lens is an addition to a full cold read, never a substitute for one.**
      Every commission must say so, and must ask for cold-read findings first,
      under their own heading, before the lens pass.
-  2. **Assign few lenses per reviewer, and divide the rest across the
-     panel.** One or two each is usually right — a reviewer given six
-     will do six shallowly. **That is a limit on what one reviewer is
-     asked, not on what the round covers.**
+  2. **Assign by group, one group per reviewer, and divide the groups
+     across the panel.** Section 6 governs the division and this item
+     does not restate it. **The unit is a group**, which is four to
+     eight lenses; an earlier version of this item said one or two
+     lenses each, which no group satisfies and which contradicted
+     section 6 outright.
+     **The caution behind that wording still holds and is about depth,
+     not arithmetic**: a reviewer handed more than it can read
+     carefully will read all of it shallowly. If a group is too large
+     for the time available, say so and split it rather than sampling
+     it silently.
   3. **How many lenses a round should apply is UNMEASURED.** An earlier
      version of this item said running all of them was theatre; that
      rested on one observation from one document and has been withdrawn.
@@ -241,7 +253,7 @@ letters and nothing else — the named thing became the whole scope. So:
 **This list is a FLOOR, not an allocation.** It says which lenses must be
 applied; it does not say which may not be. A reviewer told to apply A1, A2 and
 A3 is being told those three are required, not that the rest are
-excluded — and reading it the second way is the trap section 2 describes, a
+excluded — and reading it the second way is the trap section 0 describes, a
 named lens becoming the whole scope, operating on the selection rule itself.
 
 **Which lenses yield most is UNMEASURED.** The figures sometimes cited for

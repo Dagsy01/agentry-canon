@@ -139,10 +139,16 @@ answering plausibly without checking anything.
 
 So it is falsifiable only against a record of who can hash. Once a
 capability probe has established that for a given reviewer, **`UNABLE
-TO VERIFY` from a reviewer known to be capable is itself a finding**,
-not an accepted outcome. Without that record it remains an unfalsifiable
-answer, which is why the capability record and this convention are used
-together.
+TO VERIFY` from a reviewer known to be capable is worth asking about**,
+because it may mean the artefact never arrived intact.
+
+**It is not misconduct and must not be treated as one.** Capability and
+access are different things, and a check needs both. A reviewer that can
+hash but was never given the bytes is unable to verify, and reporting
+that is the correct answer rather than a failure to comply. **Ask what
+was missing; do not assume it was willingness.** Without a capability
+record the answer is unfalsifiable either way, which is why the record
+and this convention are used together.
 
 ## What the header does not prove
 
@@ -167,13 +173,19 @@ document in this repository, and every review artefact sent from it:
 - has its digest taken over the raw bytes, with `sha256sum` or
   equivalent.
 
-One documented exception exists. `recurring-block-patterns.md` predates
-this discipline and ends without a trailing newline. It is not
-normalised in place, because its current digest has already been
-published to reviewers and changing it silently would be
-indistinguishable from tampering. It is normalised at the point it moves
-to `registers/`, in a single commit, with both digests recorded there
-and a notice circulated to reviewers beforehand.
+One exception existed and has been closed. `recurring-block-patterns.md`
+predated this discipline and ended without a trailing newline. It was
+not normalised in place, because its digest had already been published
+and changing it silently would have been indistinguishable from
+tampering. **It was normalised in the commit that moved it to
+`registers/`, with both digests recorded in
+`registers/recurring-block-patterns-digests.md` and a notice circulated
+to reviewers beforehand.** Every file in this repository now ends with
+exactly one newline and contains no carriage returns.
+
+**The handling is the part worth keeping**: where a published digest
+must change, change it in a commit that does something else visible,
+record both digests, and tell the people holding the old one first.
 
 For a review artefact the header is regenerated whenever the body
 changes. That is one command and should be scripted rather than

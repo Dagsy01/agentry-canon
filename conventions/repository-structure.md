@@ -1,6 +1,6 @@
 REPOSITORY STRUCTURE
 
-Version prepared: 11 September 2026, 02:44 BST
+Version prepared: 15 September 2026, 01:43 BST
 Status: IN FORCE from 11 September 2026, ratified by the operator in the
     commit that publishes it.
 
@@ -46,9 +46,17 @@ What to ask of a specification, a block, a set of test fixtures. The
 lens catalogue's selection rule points at material of this kind.
 
 **`registers/` — what happened and what was decided.**
-Dated records with no rule attached: campaign logs, audits, rulings
-digests. A register goes stale by design and says so; a convention or a
-method does not.
+Dated records: campaign logs, audits, rulings digests, and observations
+about things outside this project that change. A register goes stale by
+design and says so; a convention or a method does not.
+
+**A register may carry the procedure for maintaining its own record** —
+a reading cadence, a rule about what to withhold, how to take the next
+entry. That is instruction about the register, not a standing rule
+about how work is done, and it belongs with the record it governs.
+**What it must not carry is a rule that would still apply if the
+register were deleted.** That is a convention or a method, and it goes
+where those go.
 
 **`convergence/` — how to tell whether the process is working.**
 Classification schemes for defects, thresholds, and the measurements
@@ -117,11 +125,11 @@ given kind of thing*, and not `conventions/`.
 **`registers/recurring-block-patterns.md`** reads the same way. It
 describes itself as a checklist for reviewers to check new drafts and
 findings against, which is the `briefs/` test again; the `registers/`
-test it now sits under is *dated records with no rule attached*, and ten
-standing rules are neither dated nor a record. **It was placed there by
-a ruling of 10 September 2026, before these tests were committed.** That
-ruling stands until it is changed, and whether the file moves again is
-open rather than decided here.
+test it now sits under is *dated records*, and a list of standing rules
+is neither dated nor a record. **It was placed there by a ruling of 10
+September 2026, before these tests were committed.** That ruling stands
+until it is changed, and whether the file moves again is open rather
+than decided here.
 
 **The catalogue is in `conventions/` because that was the only folder
 that existed when it was written.** This is recorded rather than fixed

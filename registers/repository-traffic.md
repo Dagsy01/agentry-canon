@@ -1,6 +1,6 @@
 REPOSITORY TRAFFIC REGISTER
 
-Version prepared: 12 September 2026, 23:28 BST
+Version prepared: 15 September 2026, 01:43 BST
 Status: IN FORCE from 12 September 2026, ratified by the operator in
     the commit that publishes it. Append-only.
 
@@ -54,9 +54,16 @@ remembered when anyone interprets them later:
 ================================================================
 
 **Public, because this repository's discipline is do not claim,
-measure.** If anything here ever says these conventions are read or
-used, this register is the evidence for it — and keeping the evidence
-private while publishing the claim would be the wrong way round.
+measure.** These figures are the record of what the hosting platform
+reported, kept where anyone can check it — and keeping a record private
+while publishing conclusions drawn from it would be the wrong way round.
+
+**They are not evidence that anything was read.** Section 5 states the
+limit and it governs: a view is a page load, a clone is often
+automation, and every artefact this project circulates points at raw
+URLs that appear here not at all. **Nothing in this register supports a
+claim about readership or use**, and a claim of that kind would need a
+different measurement that this project does not have.
 
 The figures are the operator's own, about the operator's own
 repository. No third party's performance is being measured and nothing

@@ -1,6 +1,6 @@
 RUNNING A WHOLE-DIFF REVIEW
 
-Version prepared: 15 September 2026, 00:21 BST
+Version prepared: 15 September 2026, 01:43 BST
 Status: IN FORCE from 12 September 2026, ratified by the operator in
     the commit that publishes it.
 
@@ -37,8 +37,13 @@ introduced once and never touched again survives an unbounded number of
 clean incremental passes, because it is never the line that changed in
 any of them.
 
-Run it once the ambient reviewers available on the artefact have all
-reported on the current head, and before authorising a merge.
+Run it once the **bot-exhaustion gate** is satisfied, as
+`conventions/glossary.md` defines it — every automated reviewer has
+reported on the current head, **their findings are triaged, and CI is
+green** — and before authorising a merge. **The glossary's definition
+governs and this method deliberately does not restate the conditions**,
+because a parallel version drifts: an earlier one here named the gate
+and stated it more weakly than the gate itself.
 
 ================================================================
 2. PRECONDITIONS, AND WHAT A MISSING ONE COSTS
@@ -174,26 +179,29 @@ it carries no header of its own, correctly, and whatever transmits it
 for review should state its digest in a covering message rather than
 inside it.
 
-**One lens per reviewer, none repeated, chosen for what each reviewer
-demonstrably does well rather than assigned uniformly.** A round giving
-every reviewer the same open "review this" brief converges reviewers
-toward the same class of finding and leaves gaps nobody was asked to
-look at. Rounds run this way have produced several genuinely distinct,
-non-overlapping findings each time — this is the observation the
-practice rests on, not a controlled comparison against the alternative,
-and it is reported at that strength rather than as a proven superiority.
-**An earlier, narrower practice on the same project required the
-opposite: every reviewer in a round given the identical single lens,
-rotated between rounds, specifically so a finding could not be
-attributed to the reviewer or the lens ambiguously.** This document
-recommends the newer practice on the strength of what it has since
-produced, but the two have not been run side by side on the same
+**Assign each reviewer a distinct part of the catalogue, chosen for what
+that reviewer demonstrably does well rather than assigned uniformly, and
+give no part to two reviewers.** The unit is the catalogue's own: a
+**group**, not a single lens. `conventions/review-lens-catalogue.md`
+section 6 governs how the groups are divided and this method does not
+restate it. A round giving every reviewer the same open "review this"
+brief converges reviewers toward the same class of finding and leaves
+gaps nobody was asked to look at. Rounds run this way have produced
+several genuinely distinct, non-overlapping findings each time — this is
+the observation the practice rests on, not a controlled comparison
+against the alternative, and it is reported at that strength rather than
+as a proven superiority. **An earlier, narrower practice on the same
+project required the opposite: every reviewer in a round given the
+identical single lens, rotated between rounds, specifically so a finding
+could not be attributed to the reviewer or the lens ambiguously.** This
+document recommends the newer practice on the strength of what it has
+since produced, but the two have not been run side by side on the same
 artefact, and a reader adopting either should know the other was tried
 first and abandoned on evidence, not on a controlled trial. The lens is
-additive to a full cold read, stated as such in the commission — never
-a substitute for one, since a reviewer that only applies its assigned
-lens will miss anything outside it, including things an unguided read
-would have caught.
+additive to a full cold read, stated as such in the commission — never a
+substitute for one, since a reviewer that only applies its assigned lens
+will miss anything outside it, including things an unguided read would
+have caught.
 
 **A returning reviewer — one that has already reviewed an earlier
 version of the same artefact — gets a closure audit instead of a fresh
