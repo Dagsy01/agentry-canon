@@ -198,8 +198,10 @@ document recommends the newer practice on the strength of what it has
 since produced, but the two have not been run side by side on the same
 artefact, and a reader adopting either should know the other was tried
 first and abandoned on evidence, not on a controlled trial. The lens is
-additive to a full cold read, stated as such in the commission — never a
-substitute for one, since a reviewer that only applies its assigned lens
+additive to a **whole-artefact read** — reading it entire
+before the lens narrows attention — stated as such in the commission and
+never a substitute for it, since a reviewer that only applies its
+assigned lens
 will miss anything outside it, including things an unguided read would
 have caught.
 
@@ -212,8 +214,8 @@ returning reviewer and the commissioner agreeing on what "each finding"
 is — in practice, on findings being numbered once, by whoever raised
 them, with the commission quoting those exact identifiers rather than
 assigning its own. Where that precondition held, this approach has
-surfaced findings a fresh cold read would have had to rediscover from
-nothing; it is reported as promising rather than as a settled
+surfaced findings a reviewer starting from nothing would have had to
+rediscover; it is reported as promising rather than as a settled
 comparison against a fresh lens on the same reviewer.
 
 **A finding and its proposed remedy are judged separately.** A reviewer
