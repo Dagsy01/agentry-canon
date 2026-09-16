@@ -146,6 +146,12 @@ question five folder tests could not answer.
 **How to brief it.** Ask for what is missing, in numbered separate
 questions. Give it the text, never a reference.
 
+**Does not escalate a review tier unprompted.** On 16 September it
+reported that an agent lacking full repository context won't
+unilaterally raise a tier even when a campaign is mis-scoped, relying
+instead on the operator to set it. If the assigned tier may be wrong,
+ask it directly rather than relying on it to flag that itself.
+
 ================================================================
 MISTRAL
 ================================================================
